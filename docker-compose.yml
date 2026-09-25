@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  rag-bot:
+    build: .
+    container_name: quantumforge-rag-bot
+    mem_limit: 512m
+    mem_reservation: 256m
+    cpus: 1.0
+    volumes:
+      - ./knowledge_base:/app/knowledge_base
+      - ./faiss.index:/app/faiss.index
+      - ./index_metadata.pkl:/app/index_metadata.pkl
+      - ./index_chunks.pkl:/app/index_chunks.pkl
+      - ./index_state.json:/app/index_state.json
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

@@ -1,0 +1,11 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_repo": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+  "dimension": 384,
+  "num_chunks": 91,
+  "num_documents": 32,
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "embedding_time_seconds": 1.87,
+  "index_type": "FAISS IndexFlatIP (cosine similarity via L2-normalized vectors)"
+}
