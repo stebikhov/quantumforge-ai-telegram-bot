@@ -1,0 +1,46 @@
+# Виртуальные окружения и системные файлы
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.cache/
+
+# Конфигурационные файлы
+.env
+.env.local
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# IDE файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Данные проекта
+.data/
+index_data/
+
+# Избыточные тестовые файлы (дублируют функциональность scripts/)
+test_final_integration.py
+test_final_integration_fixed.py
+test_llm_integration.py
+test_ollama.py
+test_ollama_direct.py
+test_ollama_integration.py
+test_simple_ollama.py
+check_fixes.py
+
+# Резервные файлы
+*_backup.py
+*_old.py
+*_backup.*
+
+# Не игнорируем, должны попасть в репозиторий согласно условию задачи:
+# *.log - логи тестирования и обновления
+# *.pkl, *.index, evaluation_report.md, update_log.jsonl,
+# evaluation_logs.jsonl, index_state.json, index_metadata.json.
